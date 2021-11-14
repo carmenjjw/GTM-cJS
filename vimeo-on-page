@@ -1,4 +1,9 @@
-// this code confirms the existance of https://vimeo.com in the HTML code.
+// This code checks the existance of https://vimeo.com in the HTML code. 
+// This can be used as a custom JavaScript variable to fire a video tag.
+// Created by Carmen Jiang @ Vekst
+// Date created: 202110
+//////////////////////////////////////////////////////////////////////////
+
 function () {
     var result = document.getElementsByClassName("image-wrapper image-wrapper-16x9 media-player")[0].dataset.videoUrl; // this needs to be tailored from website to website.
    if (/^https?:\/\/vimeo.com/.test(result)) {
